@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <h2>Ayomide. Div</h2>
+    <div>
+      <a href="#">Home</a>
+      <a href="#projects">Projects</a>
+      <button type="button" onclick="toggleMode()">🌙</button>
+    </div>
+  </nav>
+
+ <section class="hero">
+    <img src="WhatsApp Image 2026-04-01 at 3.10.55 PM.jpeg" class="profile" alt="Ayomide profile photo">
+    <h1>Hi, I'm Ayomide 👋</h1>
+    <p>I build modern websites</p>
+    <button type="button" onclick="scrollToProjects()">View My Work</button>
+  </section>
+<section id="about">
+  <div class="cards">
+    <div class="project-card project-pink about-card">
+      <h2>About Me</h2>
+      <p>
+        I'm Ayomide, a front-end developer who builds modern,
+        interactive and responsive web experiences.
+      </p>
+
+      <p>
+        I enjoy creating projects like weather apps, games,
+        and clean UI designs.
+      </p>
+    </div>
+
+    <div class="project-card project-green skills-panel reveal">
+      <p class="eyebrow">Core Stack</p>
+      <h2>What I Build With</h2>
+      <div class="skills-grid">
+        <article class="skill-card" data-skill="HTML">
+          <div class="skill-icon html-icon">
+            <i class="devicon-html5-plain"></i>
+          </div>
+          <h3>HTML</h3>
+          <p>Semantic structure and accessible layouts.</p>
+        </article>
+
+        <article class="skill-card" data-skill="CSS">
+          <div class="skill-icon css-icon">
+            <i class="devicon-css3-plain"></i>
+          </div>
+          <h3>CSS</h3>
+          <p>Responsive styling, spacing, and visual polish.</p>
+        </article>
+
+        <article class="skill-card" data-skill="JavaScript">
+          <div class="skill-icon js-icon">
+            <i class="devicon-javascript-plain"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Interactive features and dynamic user experience.</p>
+        </article>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <section class="projects reveal" id="projects">
+    <h2>My Projects</h2>
+
+    <div class="cards">
+      <div class="project-card project-pink">
+        <div class="project-preview">
+          <img src="Screenshot 2026-04-20 100320.png" alt="Landing Page preview">
+        </div>
+        <h3>Landing Page</h3>
+        <div class="project-links">
+          <a href=" https://ayomidemhi519-dotcom.github.io/my-landing-pag/" target="_blank" rel="noreferrer">Live</a>
+          <a href="https://github.com/ayomidemhi519-dotcom/my-landing-page.git" target="_blank" rel="noreferrer">Code</a>
+        </div>
+      </div>
+
+      <div class="project-card project-green">
+        <div class="project-preview">
+          <img src="Screenshot 2026-04-20 102622.png" alt="Weather App preview">
+        </div>
+        <h3>Weather App 🌦️</h3>
+        <div class="project-links">
+          <a href="https://ayomidemhi519-dotcom.github.io/Weather-UI/" target="_blank" rel="noreferrer">Live</a>
+          <a href="https://github.com/ayomidemhi519-dotcom/Weather-UI.git" target="_blank" rel="noreferrer">Code</a>
+        </div>
+      </div>
+      
+
+      <div class="project-card project-gold">
+        <div class="project-preview">
+          <img src="Screenshot 2026-04-20 102324.png" alt="Tic Tac Toe preview">
+        </div>
+        <h3>Tic Tac Toe 🎮</h3>
+        <div class="project-links">
+          <a href="https://ayomidemhi519-dotcom.github.io/Tic-Tac-Toe/" target="_blank" rel="noreferrer">Live</a>
+          <a href="https://github.com/ayomidemhi519-dotcom/Tic-Tac-Toe.git" target="_blank" rel="noreferrer">Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="social-icons">
+  
+  <!-- WhatsApp -->
+  <a href="https://wa.me/09060761015" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- TikTok -->
+  <a href="https://www.tiktok.com/@iamoloba32" target="_blank">
+    <i class="fab fa-tiktok"></i>
+  </a>
+
+  <!-- Twitter / X -->
+  <a href="https://twitter.com/OLOBA_JOSH" target="_blank">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+
+</div>
+
+ <section id="contact">
+  <div class="cards">
+
+    <div class="project-card project-green">
+      <h2>Contact Me</h2>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button>Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+</section>
+<p>Email: ayomidemhi519@gmail.com</p>
+<p>WhatsApp: +234 9060761015</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
